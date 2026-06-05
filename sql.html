@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Sorgu Çalıştırıcı - MiniTube</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; padding: 40px; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { margin-top: 0; color: #0f0f0f; }
+        textarea { width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 8px; font-family: monospace; font-size: 16px; margin-bottom: 20px; resize: vertical; box-sizing: border-box; }
+        button { padding: 12px 25px; background-color: #065fd4; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        button:hover { background-color: #0056b3; }
+        .back-btn { display: inline-block; margin-top: 15px; text-decoration: none; color: #065fd4; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Veritabanı Sorgu Ekranı</h2>
+        <p>Çalıştırmak istediğiniz SQL komutunu aşağıya yazın:</p>
+        <form action="sql.php" method="POST">
+            <textarea name="query" rows="6" placeholder="Örn: SELECT * FROM CHANNELS;" required></textarea>
+            <br>
+            <button type="submit">Sorguyu Çalıştır</button>
+        </form>
+        <br>
+        <a href="javascript:history.back()" class="back-btn">← Geri Dön</a>
+    </div>
+</body>
+</html>

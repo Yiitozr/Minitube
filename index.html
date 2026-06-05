@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmet Yigit Ozer</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background-color: #f9f9f9; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; /* Butonu dikey ve yatayda tam ortaya hizalar */
+        }
+        
+        .init-btn {
+            padding: 20px 50px;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff0000; /* YouTube/MiniTube kırmızısı */
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .init-btn:hover {
+            background-color: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+        }
+        
+        .init-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <form action="install.php" method="POST">
+        <button type="submit" class="init-btn">Initialize Database</button>
+    </form>
+
+</body>
+</html>
